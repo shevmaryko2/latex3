@@ -1,0 +1,83 @@
+\documentclass[coursework]{SCWorks}
+% Тип обучения: bachelor
+% Форма обучения: och (очное)
+% Тип работы: coursework
+
+\usepackage{preamble}
+
+% Настройка minted
+\setminted{
+    style=vs,
+    fontsize=\small,
+    breaklines=true,
+    framesep=2mm,
+    baselinestretch=1.2,
+    numbers=left,
+    stepnumber=1,
+    numberfirstline=true,
+    xleftmargin=5mm,
+    linenos
+}
+
+\begin{document}
+
+% Кафедра (в родительном падеже)
+\chair{математической кибернетики и компьютерных наук}
+
+% Тема работы
+\title{Механизмы полярных сияний}
+
+% Курс
+\course{1}
+
+% Группа
+\group{111}
+
+% Специальность/направление
+\napravlenie{02.03.02 --- Фундаментальная информатика и информационные технологии}
+
+% Студентка
+\studenttitle{студентки}
+\author{Шевченко Марии Ильиничны}
+
+% Заведующий кафедрой
+\chtitle{доцент, к.\,ф.-м.\,н.}
+\chname{С.\,В.\,Миронов}
+
+% Научный руководитель
+\satitle{доцент, к.\,ф.-м.\,н.}
+\saname{Г.\,Г.\,Наркайтис}
+
+% Год
+\date{2026}
+
+\maketitle
+
+\tableofcontents
+
+% Введение
+\input{Chapter/introduction}
+
+% Глава 1
+\input{Chapter/chapter1}
+
+% Глава 2
+\input{Chapter/chapter2}
+
+% Глава 3
+\input{Chapter/chapter3}
+
+% Глава 4
+\input{Chapter/chapter4}
+
+% Глава 5
+\input{Chapter/chapter4}
+
+% Заключение
+\input{Chapter/conclusion}
+
+% Список литературы
+\bibliographystyle{ugost2003}
+\bibliography{thesis}
+
+\end{document}
